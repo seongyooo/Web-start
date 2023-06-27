@@ -11,7 +11,7 @@
 		  h1{
 		    font-size: 45px;
 		    text-align: center;
-		    border: 5px white solid;
+		    border: 5px  solid;
 		    padding: 10px;
 		    margin: 10px auto;
 		    width: 250px;
@@ -39,23 +39,19 @@
 		  #left{
 		    padding-left: 30px;
 		  }
-		  #title{
-		    border-bottom: 5px white solid;
-		  }
-		  
+
 		  @media(max-width: 500px){
 		    #grid{
 		      display: block;
-		      
 		    }
 		    #right, #left{
 		      border-left: none;
-		      padding: 0;
-		      margin: 0;
+		      padding: 20px 20px 0 20px;
 		    }
 		    #right h2{
 		      border-top: 5px white solid;
 		      margin: 0;
+		      padding-top: 20px;
 		    }
 		    #title{
 		      border: none;
