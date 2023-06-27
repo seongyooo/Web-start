@@ -1,23 +1,31 @@
 		  body{
 		    margin: 0;
+		    background-color: black;
+		    color: white;
 		  }
 		  a{
-		    color: black;
+		    color: white;
 		    text-decoration: none;
 		  }
 		  
 		  h1{
 		    font-size: 45px;
 		    text-align: center;
-		    border-bottom: 1px gray solid;
-		    padding: 20px;
-		    margin: 0;
+		    border: 5px white solid;
+		    padding: 10px;
+		    margin: 10px auto;
+		    width: 250px;
+		    
 		    }
 
+		  ol{
+		    padding: 20px;
+		  }
+		  
 		  #left ol{
-		    width: 100px;
+		    width: 50px;
 		    margin: 0;
-		    padding-top: 20px;
+		    padding: 10px 20px 10px 20px;
 		  }
 		  
 		  #grid{
@@ -26,17 +34,30 @@
 		  }
 		  #right{
 		    padding-left: 30px;
-		    border-left: 1px gray solid;
+		    border-left: 5px white solid;
+		  }
+		  #left{
+		    padding-left: 30px;
+		  }
+		  #title{
+		    border-bottom: 5px white solid;
 		  }
 		  
 		  @media(max-width: 500px){
 		    #grid{
 		      display: block;
+		      
 		    }
-		    #right{
+		    #right, #left{
 		      border-left: none;
+		      padding: 0;
+		      margin: 0;
 		    }
-		    h1{
-		      border-bottom: none;
+		    #right h2{
+		      border-top: 5px white solid;
+		      margin: 0;
+		    }
+		    #title{
+		      border: none;
 		    }
 		  }
