@@ -1,59 +1,85 @@
-		  body{
-		    margin: 0;
-		    background-color: black;
-		    color: white;
-		  }
-		  a{
-		    color: white;
-		    text-decoration: none;
-		  }
-		  
-		  h1{
-		    font-size: 45px;
-		    text-align: center;
-		    border: 5px  solid;
-		    padding: 10px;
-		    margin: 10px auto;
-		    width: 250px;
-		    
-		    }
+/* 전체 페이지 스타일 */
+/* 전체 페이지 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff; /* 글씨 색상을 하얀색(#fff)으로 변경 */
+  background-color: #000; /* 배경 색상을 검은색(#000)으로 변경 */
+  margin: 20px;
+  padding: 0;
+}
 
-		  ol{
-		    padding: 20px;
-		  }
-		  
-		  #left ol{
-		    width: 50px;
-		    margin: 0;
-		    padding: 10px 20px 10px 20px;
-		  }
-		  
-		  #grid{
-		    display: grid;
-		    grid-template-columns: 1fr 7fr;
-		  }
-		  #right{
-		    padding-left: 30px;
-		    border-left: 5px white solid;
-		  }
-		  #left{
-		    padding-left: 30px;
-		  }
+/* 네비게이션 스타일 */
+#left {
+  background-color: #fff;
+  color: #000; /* 네비게이션 내용 글씨 색상을 검은색(#000)으로 변경 */
+  padding: 20px;
+  border-radius: 5px;
+}
 
-		  @media(max-width: 500px){
-		    #grid{
-		      display: block;
-		    }
-		    #right, #left{
-		      border-left: none;
-		      padding: 20px 20px 0 20px;
-		    }
-		    #right h2{
-		      border-top: 5px white solid;
-		      margin: 0;
-		      padding-top: 20px;
-		    }
-		    #title{
-		      border: none;
-		    }
-		  }
+#right {
+  background-color: #fff;
+  color: #000; /* 네비게이션 내용 글씨 색상을 검은색(#000)으로 변경 */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 타이틀 스타일 */
+#title {
+  text-align: center;
+  margin: 20px auto;
+  border:5px white solid;
+  border-radius: 10px;
+  width: 200px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* 네비게이션 스타일 */
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#left ol,
+#right ol {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+#left ol li,
+#right ol li {
+  margin-bottom: 10px;
+}
+
+#left ol li a,
+#right ol li u {
+  color: #333;
+  text-decoration: none;
+}
+
+#left ol li a:hover {
+  text-decoration: underline;
+}
+
+/* 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  #grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #right img {
+    width: 100%;
+  }
+}
