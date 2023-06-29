@@ -1,53 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <link rel="stylesheet" href="style.css">
-		<title>RoadRight</title>
-		
-		<style>
-			#right {
-			  display: flex;
-			  align-items: center;
-			}
-			
-			#right img {
-        width: 10%;
-        margin-left: 10px;
-        margin-right: 20px;
-        border-radius: 30%; /* 이미지를 50%의 둥글게 조정합니다. 필요에 따라 값을 조정해주세요. */
-      }
-
-
-		</style>
-		
-	</head>
-	<body>
-	  <div id="title">
-		  <h1><a href="index.html" class="saw" id="active">Road Right</a></h1>
-		</div>
-		
-		<div id="grid">
-  		<div id="left">
-    		<ol>
-    			<li><a href="what.html">WHAT</a></li>
-    			<li><a href="how.html">HOW</a></li>
-    			<li><a href="why.html">WHY</a></li>
-    		</ol>
-    	</div>
-    	
-    	<div id="right">
-    		<h2>RoadRight</h2>
-    		<img src="roadwrite.jpeg" width="50%">
-    		<ol>
-    		  <li><u>로드라이트</u> 만들기</li>
-    	    <li><u>네이버</u> 입사하기</li>
-    	    <li><u>코딩</u> 가르치는 일하기</li>
-    		</ol>
-    	</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>RoadRight</title>
+</head>
+<body>
+  <div id="title">
+    <h1 id="text" class="animate"><a href="index.html" class="saw ty" id="active">Road Right</a></h1>
+  </div>
+  <div id="grid">
+    <div class="side">
+      <ol>
+        <li><a href="what.html">WHAT</a></li>
+        <li><a href="how.html">HOW</a></li>
+        <li><a href="why.html">WHY</a></li>
+      </ol>
     </div>
-    
-	</body>
+    <div class="side">
+      <h2>RoadRight</h2>
+      <img src="roadwrite.jpeg" width="50%">
+      <ol>
+        <li><u>로드라이트</u> 만들기</li>
+        <li><u>네이버</u> 입사하기</li>
+        <li><u>코딩</u> 가르치는 일하기</li>
+      </ol>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
