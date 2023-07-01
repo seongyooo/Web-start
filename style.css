@@ -4,6 +4,8 @@ body {
   background-color: #000;
   margin: 20px;
   padding: 0;
+    border: 5px red solid;
+
 }
 
 #title {
@@ -36,6 +38,7 @@ h1 a {
   color: #000;
   padding: 20px;
   border-radius: 5px;
+  border: 5px red solid;
 }
 
 ol {
@@ -90,7 +93,7 @@ ol li a:hover {
 #wordcloud {
   width: 100%;
   height: 400px;
-  margin-bottom: 20px;
+  border: 5px red solid;
 }
-
+ 
 
