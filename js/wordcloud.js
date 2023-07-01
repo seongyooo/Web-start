@@ -17,7 +17,7 @@ function drawWordCloud() {
     }))
     .padding(5)
     .rotate(function() {
-      return (Math.random() < 0.5 ? -1 : 1) * Math.random() * 30;
+      return [0, 90, 180, 270][Math.floor(Math.random() * 4)];
     })
     .font("Impact")
     .fontSize(function(d) {
