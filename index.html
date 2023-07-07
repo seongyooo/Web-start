@@ -11,26 +11,34 @@
   <div id="title">
     <h1 class="animate"><a href="index.html" id="active">Road Right</a></h1>
   </div>
+  <div>
+    <form>
+      <label for="word"></label>
+      <input type="text" id="word" name="word">
+      <input type="submit" value="제출">
+    </form>  
+      <input type="button" value="hi" onclick="alert('hi')">
+
+  </div>
   <div id="grid">
     <div class="side">
-      <ol>
-        <li><a href="pages/what.html">WHAT</a></li>
-        <li><a href="pages/how.html">HOW</a></li>
-        <li><a href="pages/why.html">WHY</a></li>
+      <ol class="horizontal-list">
+        <li class="block"><a href="pages/what.html">WHAT</a></li>
+        <li class="block"><a href="pages/how.html">HOW</a></li>
+        <li class="block"><a href="pages/why.html">WHY</a></li>
       </ol>
     </div>
     <div class="side">
       <h2>RoadRight</h2>
       <div id="wordcloud"></div>
-      
     </div>
   </div>
   
   <script src="https://d3js.org/d3.v3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/jasondavies/d3-cloud/build/d3.layout.cloud.js"></script>
-  
   <script src="js/main.js"></script>
   <script src="js/wordcloud.js"></script>
 
 </body>
 </html>
+  
