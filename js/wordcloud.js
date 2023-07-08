@@ -55,15 +55,15 @@ function drawWordCloud() {
  }
  
  // window의 resize 이벤트 핸들러
- function handleWindowResize() {
+ /*function handleWindowResize() {
    clearTimeout(window.resizedFinished);
    window.resizedFinished = setTimeout(function() {
      drawWordCloud();
    }, 250);
- }
+ }*/
  
  // 초기 로드 시 word cloud 그리기
  drawWordCloud();
  
  // window의 resize 이벤트에 핸들러 등록
- window.addEventListener('resize', handleWindowResize);
+ /*window.addEventListener('resize', handleWindowResize);*/
